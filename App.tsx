@@ -552,7 +552,7 @@ const App: React.FC = () => {
                 isLoading={sessionsLoading}
             />
 
-            <main className="container mx-auto p-4 md:p-8">
+            <main className="container mx-auto p-4 sm:p-6 md:p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left Column */}
                     <div className="flex flex-col gap-8">

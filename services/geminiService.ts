@@ -1,13 +1,11 @@
+
 import { GoogleGenAI, Type } from "@google/genai";
 import type { QuizQuestion, ChatMessage } from '../types';
 import { withMonitoring } from './monitoringService';
-import { GEMINI_API_KEY } from '../config';
 
-if (!GEMINI_API_KEY || GEMINI_API_KEY === "PASTE_YOUR_GEMINI_API_KEY_HERE") {
-    throw new Error("API_KEY not found. Please create a 'config.ts' file and add your Gemini API key.");
-}
-
-const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+// Per the guidelines, the API key must be sourced from the `process.env.API_KEY`
+// environment variable. It is assumed to be pre-configured and valid.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const extractTextFromFileFn = async (base64FileData: string, mimeType: string): Promise<string> => {
     try {

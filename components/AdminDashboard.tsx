@@ -142,25 +142,25 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout, userNa
                         <table className="w-full text-sm text-left text-slate-400">
                             <thead className="text-xs text-slate-300 uppercase bg-slate-700">
                                 <tr>
-                                    <th scope="col" className="px-6 py-3">Function</th>
-                                    <th scope="col" className="px-6 py-3">Status</th>
-                                    <th scope="col" className="px-6 py-3">Duration</th>
-                                    <th scope="col" className="px-6 py-3">Timestamp</th>
-                                    <th scope="col" className="px-6 py-3">Error</th>
+                                    <th scope="col" className="px-4 md:px-6 py-3">Function</th>
+                                    <th scope="col" className="px-4 md:px-6 py-3">Status</th>
+                                    <th scope="col" className="px-4 md:px-6 py-3">Duration</th>
+                                    <th scope="col" className="px-4 md:px-6 py-3">Timestamp</th>
+                                    <th scope="col" className="px-4 md:px-6 py-3">Error</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {logs.length > 0 ? logs.map(log => (
                                     <tr key={log.id} className="bg-slate-800 border-b border-slate-700 hover:bg-slate-700/50">
-                                        <th scope="row" className="px-6 py-4 font-medium text-white whitespace-nowrap">{log.functionName}</th>
-                                        <td className="px-6 py-4">
+                                        <th scope="row" className="px-4 md:px-6 py-4 font-medium text-white whitespace-nowrap">{log.functionName}</th>
+                                        <td className="px-4 md:px-6 py-4">
                                             <span className={`px-2 py-1 rounded-full text-xs font-semibold ${log.status === 'success' ? 'bg-green-900/50 text-green-300' : 'bg-red-900/50 text-red-300'}`}>
                                                 {log.status}
                                             </span>
                                         </td>
-                                        <td className="px-6 py-4">{formatDuration(log.duration)}</td>
-                                        <td className="px-6 py-4">{new Date(log.startTime).toLocaleString()}</td>
-                                        <td className="px-6 py-4 text-red-400 whitespace-pre-wrap break-all">{log.errorMessage || 'N/A'}</td>
+                                        <td className="px-4 md:px-6 py-4">{formatDuration(log.duration)}</td>
+                                        <td className="px-4 md:px-6 py-4">{new Date(log.startTime).toLocaleString()}</td>
+                                        <td className="px-4 md:px-6 py-4 text-red-400 whitespace-pre-wrap break-all">{log.errorMessage || 'N/A'}</td>
                                     </tr>
                                 )) : (
                                     <tr>

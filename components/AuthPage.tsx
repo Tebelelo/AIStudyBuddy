@@ -44,7 +44,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLogin, onSignUp, onAdminLo
                 <div className="text-center mb-8">
                     <div className="flex items-center justify-center gap-4 mb-4">
                         <BrainIcon className="h-16 w-16 text-cyan-400" />
-                        <h1 className="text-4xl font-bold text-white">AI Study Buddy</h1>
+                        <h1 className="text-3xl sm:text-4xl font-bold text-white">AI Study Buddy</h1>
                     </div>
                     <p className="text-slate-400">Your intelligent partner in learning.</p>
                 </div>
