@@ -1,0 +1,7 @@
+{
+  "name": "Copy of AI Study Buddy(github deployment ready)",
+  "description": "An AI-powered assistant that can summarize content, generate quizzes, and answer questions from uploaded documents or voice recordings. Use your voice or upload a document to get started.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
