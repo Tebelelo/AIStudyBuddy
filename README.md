@@ -106,6 +106,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 └── README.md            # You are here!
 ```
 ---
-## 📄 License
-
-This project is licensed under the MIT License.
+## 📄 Deployment link
+**https://ai-study-buddy-bmwm.vercel.app/**
