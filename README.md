@@ -2,7 +2,6 @@
 
 An intelligent partner in learning, powered by Google Gemini. This full-stack application allows users to process study materials from various sources, generate summaries and quizzes, and interact with an AI assistant to deepen their understanding.
 
-![AI Study Buddy Screenshot](https://storage.googleapis.com/aistudio-project-showcase/tutorials/9b59e35b-1678-4537-81a1-949e25b12a52/thumbnail.png)
 
 ---
 
